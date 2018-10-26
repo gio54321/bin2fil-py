@@ -1,5 +1,6 @@
 # bin2fil-py
-This is a python script I wrote to replace (or at least add an alternative) to the [old bin2fil](https://github.com/gio54321/bin2fil).
+This is a python script I wrote to replace (or at least add an alternative) to the [old bin2fil written in node](https://github.com/gio54321/bin2fil).
+Thanks to the highly efficient numpy/scipy C backends this program can convert much faster than the old one.
 
 ## Installation
 To run this script you must have python (note this is only tested with python3) installed with `numpy` and `scipy` libraries. You can install these dependencied by
@@ -32,7 +33,7 @@ optional arguments:
   -l , --length         length of the conversion in seconds (default is until
                         EOF)
   -mjd , --mjd-start    MJD start time (default is taken from creation time of
-                        fhe input file)
+                        the input file)
   -fh , --filt-high     frequency of the highpass filter in Hz
   -fl , --filt-low      frequency of the lowpass filter in Hz
   -a , --ampli          amplification during conversion
@@ -75,3 +76,6 @@ source_de = 543443.57
 chunk_size = 50000 # I think this is the best but feel free to experiment
 # --------------------------------------------------------
 ```
+## TODOs
+- [ ] Implement Ampli control and saturation percentage display
+- [ ] Implement some kind of graph of the channels (not strictly necessary)

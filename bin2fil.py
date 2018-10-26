@@ -59,7 +59,7 @@ def parse_arguments(debug=True):
 
 	# mjd start time
 	parser.add_argument('-mjd', '--mjd-start', metavar='', action='store', type=float, default=mjd_time, dest='mjd_time', 
-		help='MJD start time (default is taken from creation time of fhe input file)')
+		help='MJD start time (default is taken from creation time of the input file)')
 	
 	# highpass filter frequency
 	parser.add_argument('-fh', '--filt-high', metavar='', action='store', type=float, dest='filt_h', default=f_h,
