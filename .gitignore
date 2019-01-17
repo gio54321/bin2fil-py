@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# personal testing
+b0525_25_1K_6h.bin
+b0525_25_1K_6h.fil
