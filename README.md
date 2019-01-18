@@ -47,9 +47,12 @@ optional arguments:
   -o , --output-file    output file name (default is replaced only the
                         extension)
   -cs , --chunk-size    size of the chunks that are elaborated
+  -sp, --saturation-percentage
+                        show the percentage of samples that are saturated
+                        during the clipping and a graph of the channels
 ```
 
-so the most basic command you can run is 
+so the most basic command you can run is
 ```
 python bin2fil.py file.bin
 ```
@@ -62,7 +65,7 @@ At the beginning of the file there are some global variables you have to modify 
 # -------------- GLOBAL DEFAULTS VATIABLES ---------------
 conv_start = 0
 conv_len = 7200
-ampli = 3.0
+ampli = 1.0
 sample_rate = 1000
 f_h = 0.1
 f_l = 60.0
@@ -74,6 +77,7 @@ source_name = 'B0329+54'
 source_ra = 33259.37
 source_de = 543443.57
 chunk_size = 50000 # I think this is the best but feel free to experiment
+show_saturation = False
 # --------------------------------------------------------
 ```
 ## TODOs
